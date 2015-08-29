@@ -1,0 +1,16 @@
+# Final content #
+#################
+*.zip
+*.ftl
+
+# Junk Operating system files #
+###############################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# When packaging, please remove this file.
