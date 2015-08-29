@@ -7,25 +7,25 @@
 
 <event name="ACHIEVEMENT_HELPER">
 	<text>Welcome to the Achievement Helper. Please choose your ship below. (Step 1/3)</text>
-	<choice req="UNCODED">
+	<choice  hidden="false">
 		<text>Upper row. (Uncoded)</text>
 		<event load="UPPER_ROW_ACH"/>
 	</choice>
-	<choice req="UNCODED">
+	<choice  hidden="false">
 		<text>Lower row. (Uncoded)</text>
 		<event load="LOWER_ROW_ACH"/>
 	</choice>
-	<choice req="UNCODED">
+	<choice  hidden="false">
 		<text>Generic Achievements (Uncoded)</text>
 		<event load="GEN_ACH"/>
 	</choice>
 <!--	<choice req="anaerobic">	-->
-	<choice req="UNCODED">
+	<choice  hidden="false">
 		<text>Lanius Cruiser (Uncoded)</text>
 		<event load="DLC_ACH"/>
 	</choice>
 <!--	<choice req="crystal"	-->
-	<choice req="UNCODED">
+	<choice  hidden="false">
 		<text>Crystal Cruiser (Uncoded)</text>
 		<event load="CRYSTAL_ACH"/>
 	</choice>
@@ -34,3 +34,28 @@
 		<event />
 	</choice>
 </event>
+
+<event name="UPPER_ROW_ACH">
+	<text>This event isn't coded yet!</text>
+</event>
+
+<event name="LOWER_ROW_ACH">
+        <text>This event isn't coded yet!</text>
+</event>
+
+<event name="GEN_ACH">
+        <text>This event isn't coded yet!</text>
+</event>
+
+<event name="DLC_ACH">
+        <text>This event isn't coded yet!</text>
+</event>
+
+<event name="CRYSTAL_ACH">
+        <text>This event isn't coded yet!</text>
+</event>
+
+
+
+
+
