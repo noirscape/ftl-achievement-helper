@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<shipBlueprint name="WEAK_REBEL_ACH" layout="rebel_squat" img="rebel_squat">
+	<class>Deweaponized Rebel Rigger</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<drones power="4" max="10" room="1" start="false" />
+		<engines power="2" max="10" room="7" start="true" />
+		<oxygen power="1" max="3" room="2" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="2" max="10" room="4" start="false" />
+		<weapons power="3" max="10" room="6" start="false" />
+	</systemList>
+	<weaponSlots>1</weaponSlots>
+	<droneSlots>1</droneSlots>
+	<weaponList missiles="10" count="0" />
+	<droneList drones="0" count="0">
+		<drone name="DEFENSE_1" />
+		<drone name="DEFENSE_1" />
+	</droneList>
+	<health amount="1" />
+	<maxPower amount="15" />
+	<crewCount amount="1" max="1" class="crystal" />
+	<crewCount amount="1" max="1" class="anaerobic" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>
+
+<shipBlueprint name="WEAK_REBEL_SKINNY_ELITE_ACH" layout="rebel_long" img="rebel_long_elite">
+	<class>Drone Rebel Elite</class>
+	<minSector>1</minSector>
+	<maxSector>8</maxSector>
+	<systemList>
+		<drones power="1" max="1" room="4" start="true" />
+		<engines power="3" max="5" room="5" start="true" />
+		<medbay power="1" max="3" room="3" start="false" />
+		<oxygen power="1" max="2" room="2" start="true" />
+		<pilot power="1" max="3" room="0" start="true" />
+		<shields power="4" max="8" room="6" start="true" />
+		<teleporter power="1" max="3" room="1" start="false" />
+	</systemList>
+	<weaponSlots>0</weaponSlots>
+	<droneSlots>1</droneSlots>
+	<weaponList missiles="10" count="0" load="WEAPONS_REBEL" />
+	<droneList drones="0" count="1">
+		<drone name="DEFENSE_1" />
+	</droneList>
+	<health amount="14" />
+	<maxPower amount="13" />
+	<crewCount amount="3" max="8" class="human" />
+	<crewCount amount="3" max="3" class="crystal" />
+	<crewCount amount="1" max="1" class="anaerobic" />
+	<boardingAI>sabotage</boardingAI>
+</shipBlueprint>

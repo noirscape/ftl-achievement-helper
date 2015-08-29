@@ -200,13 +200,13 @@ Kestrel Cruiser -->
 		<text>A small fleet decloaks next to you. When you communicate with it, they reveal they were send to help you. You watch as they heal up your ship.</text>
 		<fleet>rebel</fleet>
 		<damage amount="-30"/>
-		<choice>
-		<text>Continue...</text>
+		<choice hidden="true">
+		<text>Continue...</text>		
 			<event>
-			<text>The fleet starts firing their weapons at you until you only have one hull remaining. Afterwards they give you some scrap and allow you to repair your ship at their store.</text>
+			<text>The fleet starts firing their weapons at you until you only have one hull remaining. You engage your weapons and collect the debris to patch up your ship later.</text>
+			<ship load="KESTREL_ACH" hostile="true"/>
 			<damage amount="29"/>
 			<item_modify><item type="scrap" min="116" max="116"/></item_modify>
-			<store />
 			</event>
 		</choice>
 		</event>
@@ -267,3 +267,15 @@ Kestrel Cruiser -->
         <text>This event isn't coded yet!</text>
 </event>
 
+<!-- Enemy Ship Blueprints -->
+<!-- Broken -->
+<ship autoblueprint="WEAK_REBEL_ACH" name="KESTREL_ACH">
+	<deadCrew>
+	<text>With the crew dead the fleet opens up their store to patch up the damage</text>
+	<store/>
+	</deadCrew>
+	<destroyed>
+	<text>With the ship destroyed the fleet opens up their store to patch up the damage</text>
+	<store/>
+	</destroyed>
+</ship>
