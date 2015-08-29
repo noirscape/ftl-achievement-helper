@@ -56,7 +56,23 @@
 </event>
 
 <event name="LOWER_ROW_ACH">
-        <text>This event isn't coded yet!</text>
+        <text>Choose your ship (Step 1/3)</text>
+	<choice>
+		<text>Mantis Cruiser</text>
+		<event load="MANTIS_ACH"/>
+	</choice>
+	<choice>
+		<text>Slug Cruiser</text>
+		<event load="SLUG_ACH"/>
+	</choice>
+	<choice>
+		<text>Rock Cruiser</text>
+		<event load="ROCK_ACH"
+	</choice>
+	<choice>
+		<text>Stealth Cruiser</text>
+		<event load="STEALTH_ACH"/>
+	</choice>
 </event>
 
 <event name="GEN_ACH">

@@ -9,7 +9,7 @@ ftl-achievement-helper is a mod for the indie game FTL. The mod aims to help use
   - [x] Create outline skeleton.
   - [ ] Create internal option skeletons.
     - [x] Upper row ships.
-    - [ ] Lower row ships.
+    - [x] Lower row ships.
     - [ ] Generic Achievements.
 - [ ] Code Achievements.
   - [ ] Kestrel
