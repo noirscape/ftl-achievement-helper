@@ -98,7 +98,7 @@ Kestrel Cruiser -->
 		<event load="KESTREL_ACH_2"/>
 	</choice>
 	<choice>
-		<text>Tough Little Ship (Uncoded)</text>
+		<text>Tough Little Ship</text>
 		<event load="KESTREL_ACH_3"/>
 	</choice>
 </event>
@@ -193,7 +193,24 @@ Kestrel Cruiser -->
 </event>
 
 <event name="KESTREL_ACH_3">
-        <text>This event isn't coded yet!</text>
+        <text>Additional Options:None(Step 3/3)</text>
+	<choice>
+	<text>Continue...</text>
+		<event>
+		<text>A small fleet decloaks next to you. When you communicate with it, they reveal they were send to help you. You watch as they heal up your ship.</text>
+		<fleet>rebel</fleet>
+		<damage amount="-30"/>
+		<choice>
+		<text>Continue...</text>
+			<event>
+			<text>The fleet starts firing their weapons at you until you only have one hull remaining. Afterwards they give you some scrap and allow you to repair your ship at their store.</text>
+			<damage amount="29"/>
+			<item_modify><item type="scrap" min="116" max="116"/></item_modify>
+			<store />
+			</event>
+		</choice>
+		</event>
+	</choice>
 </event>
 
 <!-- Engi Cruiser -->
