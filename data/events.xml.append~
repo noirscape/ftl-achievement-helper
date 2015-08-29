@@ -5,7 +5,7 @@
 	</mod-append:choice>
 </mod:findName>
 
-<event name="ACHIEVEMENT_HELPER">
+<event name="ACHIEVEMENT_HELPER"
 	<text>Welcome to the Achievement Helper. Please choose your ship below. (Step 1/3)</text>
 	<choice req="UNCODED">
 		<text>Upper row. (Uncoded)</text>
