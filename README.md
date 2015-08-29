@@ -5,12 +5,12 @@ Helps to restore achievements after data corruption in FTL
 ftl-achievement-helper is a mod for the indie game FTL. The mod aims to help users restore their achievements after corruption.
 
 # Current progress
-- [ ] Create primary skeleton
+- [x] Create primary skeleton
   - [x] Create outline skeleton.
-  - [ ] Create internal option skeletons.
+  - [x] Create internal option skeletons.
     - [x] Upper row ships.
     - [x] Lower row ships.
-    - [ ] Generic Achievements.
+    - [x] Generic Achievements.
 - [ ] Code Achievements.
   - [ ] Kestrel
   - [ ] Engi
@@ -22,3 +22,6 @@ ftl-achievement-helper is a mod for the indie game FTL. The mod aims to help use
   - [ ] Stealth
   - [ ] Lanius
   - [ ] Crystal
+- [ ] Generic Achievements
+  - [ ] Going the Distance
+  - [ ] Skill and Equipment

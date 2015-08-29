@@ -81,7 +81,16 @@
 </event>
 
 <event name="GEN_ACH">
-        <text>This event isn't coded yet!</text>
+        <text>Choose a Category (Step 1/2)</text>
+	<choice>
+		<text>Going the Distance</text>
+		<event load="DISTANCE_ACH"/>
+	</choice>
+	<choice>
+		<text>Skill and Equipment</text>
+		<event load="SKILL_ACH"/>
+	</choice>
+		
 </event>
 
 <!-- Achievements start here.
@@ -279,3 +288,67 @@ Kestrel Cruiser -->
 	<store/>
 	</destroyed>
 </ship>
+
+<!-- Generic Achievements -->
+
+<event name="DISTANCE_ACH">
+	<text>Choose an Achievement (2/2)</text>
+	<choice>
+		<text>Coming in for my Pacifism run!</text>
+		<event/>
+	</choice>
+	<choice>
+		<text>I don't need no stinkin' upgrades!</text>
+		<event/>
+	</choice>
+	<choice>
+		<text>On a Wing and a Prayer</text>
+		<event/>
+	</choice>
+	<choice>
+		<text>Ballistophobia</text>
+		<event/>
+	</choice>
+	<choice>
+		<text>Technophobia</text>
+		<event/>
+	</choice>
+	<choice>
+		<text>Living off the Land</text>
+		<event/>
+	</choice>
+	<choice>
+		<text>No Redshirts Here</text>
+	</choice>
+</event>
+
+<event name="SKILL_ACH">
+	<choice>
+		<text>Some people just like to watch ships burn</text>
+		<event/>
+	</choice>
+	<choice>
+		<text>Astronomically Low Odds</text>
+		<event/>
+	</choice>
+	<choice>
+		<text>BOARDING OBJECTIVE SUCCESFUL</text>
+		<event/>
+	</choice>
+	<choice>
+		<text>They never saw it coming</text>
+		<event/>
+	</choice>
+	<choice>
+		<text>Trustworthy Auto-Pilot</text>
+		<event/>
+	</choice>
+	<choice>
+		<text>Slice and Dice</text>
+		<event/>
+	</choice>
+	<choice>
+		<text>Victory through Asphyxation</text>
+		<event/>
+	</choice>
+</event>
