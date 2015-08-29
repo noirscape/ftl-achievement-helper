@@ -1,18 +1,23 @@
-<mod:findName type="event" name="START_GAME_CHOICES">
-	<mod-append:choice>
-		<text>Load up the achievement helper.</text>
-		<event load="ACHIEVEMENT_HELPER"/>
-	</mod-append:choice>
-</mod:findName>
+<event name="START_BEACON">
+	<text>Welcome to a new sector! Get to the exit beacon and jump to the next sector before the pursuing Rebels catch you!</text>
+	<choice hidden="true">
+	<text>Continue...</text>
+		<event />
+	</choice>
+	<choice req="engines" lvl="1" hidden="true">
+	<text>(Achievement Helper). Connect to the Achievement Helper.</text>
+		<event load="ACHIEVEMENT_HELPER" />
+	</choice>
+</event>
 
 <event name="ACHIEVEMENT_HELPER">
 	<text>Welcome to the Achievement Helper. Please choose your ship below. (Step 1/3)</text>
 	<choice  hidden="false">
-		<text>Upper row. (Uncoded)</text>
+		<text>Upper row.</text>
 		<event load="UPPER_ROW_ACH"/>
 	</choice>
 	<choice  hidden="false">
-		<text>Lower row. (Uncoded)</text>
+		<text>Lower row.</text>
 		<event load="LOWER_ROW_ACH"/>
 	</choice>
 	<choice  hidden="false">
@@ -42,15 +47,15 @@
 		<event load="KESTREL_ACH"/>
 	</choice>
 	<choice>
-		<text>Engi Cruiser</text>
+		<text>Engi Cruiser (Uncoded)</text>
 		<event load="ENGI_ACH"/>
 	</choice>
 	<choice>
-		<text>Federation Cruiser
+		<text>Federation Cruiser (Uncoded)</text>
 		<event load="FED_ACH"/>
 	</choice>
 	<choice>
-		<text>Zoltan Cruiser</text>
+		<text>Zoltan Cruiser (Uncoded)</text>
 		<event load="ZOLTAN_ACH"/>
 	</choice>
 </event>
@@ -58,19 +63,19 @@
 <event name="LOWER_ROW_ACH">
         <text>Choose your ship (Step 1/3)</text>
 	<choice>
-		<text>Mantis Cruiser</text>
+		<text>Mantis Cruiser (Uncoded)</text>
 		<event load="MANTIS_ACH"/>
 	</choice>
 	<choice>
-		<text>Slug Cruiser</text>
+		<text>Slug Cruiser (Uncoded)</text>
 		<event load="SLUG_ACH"/>
 	</choice>
 	<choice>
-		<text>Rock Cruiser</text>
-		<event load="ROCK_ACH"
+		<text>Rock Cruiser (Uncoded)</text>
+		<event load="ROCK_ACH"/>
 	</choice>
 	<choice>
-		<text>Stealth Cruiser</text>
+		<text>Stealth Cruiser (Uncoded)</text>
 		<event load="STEALTH_ACH"/>
 	</choice>
 </event>
@@ -83,7 +88,129 @@
 Kestrel Cruiser -->
 
 <event name="KESTREL_ACH">
+        <text>Choose your Achievement. (Step 2/3)</text>
+	<choice>
+		<text>The United Federation</text>
+		<event load="KESTREL_ACH_1"/>
+	</choice>
+	<choice>
+		<text>Full Arsenal (Uncoded)</text>
+		<event load="KESTREL_ACH_2"/>
+	</choice>
+	<choice>
+		<text>Tough Little Ship</text>
+		<event load="KESTREL_ACH_3"/>
+	</choice>
+</event>
+
+<event name="KESTREL_ACH_1">
+	<text>Additional options:Ship layout (Step 3/3)</text>
+	<choice>
+		<text>Type A</text>
+		<event>
+			<text>You are put on hold when your crew reports finding a pod containing crew. You take a look at them. The first is an Engi. Good at reparing, bad at fighting</text>
+			<crewMember amount="1" class="engi">Hutz</crewMember>
+			<choice>
+			<text>Continue...</text>
+			<event>
+			<text>The next member you find is a Mantis, good at fighting, this warrior race is feared by many.</text>
+			<crewMember amount="1" class="mantis">Dengler</crewMember>
+			<choice>
+			<text>Continue...</text>
+			<event>
+			<text>What initially appears to be a pile of rocks, reveals itself to be a Rockmen. These beings are immune to fire and strong, but are also slow.</text>
+			<crewMember amount="1" class="rock">Robert</crewMember>
+			<choice>
+			<text>Continue...</text>
+			<event>
+			<text>Next out walks a Zoltan, also known as the 'Living power source', they are however weak in combat.</text>
+			<crewMember amount="1" class="energy">Kirkner</crewMember>
+			<choice>
+			<text>Continue...</text>
+			<event>
+			<text>You prepare to jettison the pod, but you notice a trail leading out of your ship. When you follow it you notice it belongs to a slug. Michievous and cunning, these beings are not to be trusted, but yet something tells you he will be making comics about your adventure.</text>
+			<crewMember amount="1" class="slug">DirtyTabs</crewMember>
+			<choice>
+			<text>Continue...</text>
+			<event>
+			<text>As you jetisson the pod, your connection to the Achievement helper is lost. The only thing you can see now are the words:"Achievement complete".</text>
+			</event></choice></event></choice></event></choice></event></choice></event></choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Type B</text>
+		<event>
+                        <text>You are put on hold when your crew reports finding a pod containing crew. You take a look at them. The first is an Engi. Good at reparing, bad at fighting</text>
+			<crewMember amount="1" class="engi">Hutz</crewMember>
+			<choice>
+			<text>Continue...</text>
+			<event>
+                        <text>What initially appears to be a pile of rocks, reveals itself to be a Rockmen. These beings are immune to fire and strong, but are also slow.</text>
+			<crewMember amount="1" class="rock">Robert</crewMember>
+			<choice>
+			<text>Continue...</text>
+			<event>
+			<text>You prepare to jettison the pod, but you notice a trail leading out of your ship. When you follow it you notice it belongs to a slug. Michievous and cunning, these beings are not to be trusted, but yet something tells you he will be making comics about your adventure.</text>
+			<crewMember amount="1" class="slug">DirtyTabs</crewMember>
+			<choice>
+			<text>Continue...</text>
+			<event>
+			<text>As you jetisson the pod, your connection to the Achievement helper is lost. The only thing you can see now are the words:"Achievement complete".</text>
+			</event></choice></event></choice></event></choice>
+                </event>
+	</choice>
+	<choice>
+		<text>Type C</text>
+		<event>
+                       <text>You are put on hold when your crew reports finding a pod containing crew. You take a look at them. The first is an Engi. Good at reparing, bad at fighting</text>
+			<crewMember amount="1" class="engi">Hutz</crewMember>
+			<choice>
+			<text>Continue...</text>
+			<event>
+			<text>What initially appears to be a pile of rocks, reveals itself to be a Rockmen. These beings are immune to fire and strong, but are also slow.</text>
+			<crewMember amount="1" class="rock">Robert</crewMember>
+			<choice>
+			<text>Continue...</text>
+			<event>
+			<text>Next out walks a Zoltan, also known as the 'Living power source', they are however weak in combat.</text>
+			<crewMember amount="1" class="energy">Kirkner</crewMember>
+			<choice>
+			<text>Continue...</text>
+			<event>
+			<text>You prepare to jettison the pod, but you notice a trail leading out of your ship. When you follow it you notice it belongs to a slug. Michievous and cunning, these beings are not to be trusted, but yet something tells you he will be making comics about your adventure.</text>
+			<crewMember amount="1" class="slug">DirtyTabs</crewMember>
+			<choice>
+			<text>Continue...</text>
+			<event>
+			<text>As you jetisson the pod, your connection to the Achievement helper is lost. The only thing you can see now are the words:"Achievement complete".</text>
+			</event></choice></event></choice></event></choice></event></choice>
+                </event>
+	</choice>
+</event>
+
+<event name="KESTREL_ACH_2">
         <text>This event isn't coded yet!</text>
+</event>
+
+<event name="KESTREL_ACH_3">
+        <text>Additional Options:None(Step 3/3)</text>
+	<choice>
+	<text>Continue...</text>
+		<event>
+		<text>A small fleet decloaks next to you. When you communicate with it, they reveal they were send to help you. You watch as they heal up your ship.</text>
+		<fleet>rebel</fleet>
+		<damage amount="-30"/>
+		<choice hidden="true">
+		<text>Continue...</text>		
+			<event>
+			<text>The fleet starts firing their weapons at you until you only have one hull remaining. You engage your weapons and collect the debris to patch up your ship later.</text>
+			<ship load="KESTREL_ACH" hostile="true"/>
+			<damage amount="29"/>
+			<item_modify><item type="scrap" min="116" max="116"/></item_modify>
+			</event>
+		</choice>
+		</event>
+	</choice>
 </event>
 
 <!-- Engi Cruiser -->
@@ -140,3 +267,15 @@ Kestrel Cruiser -->
         <text>This event isn't coded yet!</text>
 </event>
 
+<!-- Enemy Ship Blueprints -->
+<!-- Broken -->
+<ship autoblueprint="WEAK_REBEL_ACH" name="KESTREL_ACH">
+	<deadCrew>
+	<text>With the crew dead the fleet opens up their store to patch up the damage</text>
+	<store/>
+	</deadCrew>
+	<destroyed>
+	<text>With the ship destroyed the fleet opens up their store to patch up the damage</text>
+	<store/>
+	</destroyed>
+</ship>
