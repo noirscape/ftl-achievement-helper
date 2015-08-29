@@ -295,60 +295,190 @@ Kestrel Cruiser -->
 	<text>Choose an Achievement (2/2)</text>
 	<choice>
 		<text>Coming in for my Pacifism run!</text>
-		<event/>
+		<event load="PACIFISM_ACH"/>
 	</choice>
 	<choice>
 		<text>I don't need no stinkin' upgrades!</text>
-		<event/>
+		<event load="NO_UPGRADE_ACH"/>
 	</choice>
 	<choice>
 		<text>On a Wing and a Prayer</text>
-		<event/>
+		<event load="WING_ACH"/>
 	</choice>
 	<choice>
 		<text>Ballistophobia</text>
-		<event/>
+		<event load="NO_MISSILES_ACH"/>
 	</choice>
 	<choice>
 		<text>Technophobia</text>
-		<event/>
+		<event load="NO_DRONES_ACH"/>
 	</choice>
 	<choice>
 		<text>Living off the Land</text>
-		<event/>
+		<event load="NO_PURCHASE_ACH"/>
 	</choice>
 	<choice>
 		<text>No Redshirts Here</text>
+		<event load="NO_CREW_DEAD_ACH"/>
 	</choice>
 </event>
 
 <event name="SKILL_ACH">
 	<choice>
 		<text>Some people just like to watch ships burn</text>
-		<event/>
+		<event load="TROLL_ACH"/>
 	</choice>
 	<choice>
 		<text>Astronomically Low Odds</text>
-		<event/>
+		<event load="SUPERLOW_ACH"/>
 	</choice>
 	<choice>
 		<text>BOARDING OBJECTIVE SUCCESFUL</text>
-		<event/>
+		<event load="BOARDING_DRONE_ACH"/>
 	</choice>
 	<choice>
 		<text>They never saw it coming</text>
-		<event/>
+		<event load="PRESHOTTER"/>
 	</choice>
 	<choice>
 		<text>Trustworthy Auto-Pilot</text>
-		<event/>
+		<event load="BOARD_ALL"/>
 	</choice>
 	<choice>
 		<text>Slice and Dice</text>
-		<event/>
+		<event load="SLICE_AND_DICE"/>
 	</choice>
 	<choice>
 		<text>Victory through Asphyxation</text>
-		<event/>
+		<event load="OXYGEN_MURDER"/>
 	</choice>
+</event>
+
+<!-- Going the distance -->
+<event name="PACIFISM_ACH">
+	<text>As soon as you choose this option, you are put on hold. When the connection returns, they agree to outfit your ship with powerful weaponry, engines and to defeat the flagship whilst preventing destruction</text>
+	<upgrade amount="25" system="reactor"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Engine upgrades have arrived!</text>
+	<upgrade amount="7"  system="engines"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Shield upgrades have arrived!</text>
+	<upgrade amount="7"  system="shields"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Weapon upgrades have arrived!</text>
+	<upgrade amount="7"  system="weapons"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Medbay upgrades have arrived!</text>
+	<upgrade amount="2"  system="medbay"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Chain Vulcan has arrived!</text>
+	<weapon name="LASER_CHAINGUN_2"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Glaive Beam has arrived!</text>
+	<weapon name="BEAM_3"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Pegasus Missile launcher has arrived!</text>
+	<weapon name="MISSILES_BURST"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Ion Blast Mark II has arrived!</text>
+	<weapon name="ION_4"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The FTL Recharge Booster has arrived!</text>
+	<augment name="FTL_BOOSTER"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Zoltan Shield has arrived!</text>
+	<augment name="ENERGY_SHIELD"/>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+</event>
+
+<event name="NO_UPGRADE_ACH">
+        <text>This event isn't coded yet!</text>
+</event>
+
+<event name="WING_ACH">
+        <text>This event isn't coded yet!</text>
+</event>
+
+<event name="NO_MISSILES_ACH">
+        <text>This event isn't coded yet!</text>
+</event>
+
+<event name="NO_DRONES_ACH">
+        <text>This event isn't coded yet!</text>
+</event>
+
+<event name="NO_PURCHASE_ACH">
+        <text>This event isn't coded yet!</text>
+</event>
+
+<event name="NO_CREW_DEAD_ACH">
+        <text>This event isn't coded yet!</text>
+</event>
+
+<!-- Skill and Equipment -->
+<event name="TROLL_ACH">
+        <text>This event isn't coded yet!</text>
+</event>
+
+<event name="SUPERLOW_ACH">
+        <text>This event isn't coded yet!</text>
+</event>
+
+<event name="BOARDING_DRONE_ACH">
+        <text>This event isn't coded yet!</text>
+</event>
+
+<event name="PRESHOTTER">
+        <text>This event isn't coded yet!</text>
+</event>
+
+<event name="BOARD_ALL">
+        <text>This event isn't coded yet!</text>
+</event>
+
+<event name="SLICE_AND_DICE">
+        <text>This event isn't coded yet!</text>
+</event>
+
+<event name="OXYGEN_MURDER">
+        <text>This event isn't coded yet!</text>
 </event>
