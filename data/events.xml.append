@@ -29,4 +29,8 @@
 		<text>Crystal Cruiser (Uncoded)</text>
 		<event load="CRYSTAL_ACH"/>
 	</choice>
+	<choice>
+		<text>Do nothing</text>
+		<event />
+	</choice>
 </event>
