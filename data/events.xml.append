@@ -306,7 +306,7 @@ Kestrel Cruiser -->
 		<event load="WING_ACH"/>
 	</choice>
 	<choice>
-		<text>Ballistophobia (Uncoded)</text>
+		<text>Ballistophobia</text>
 		<event load="NO_MISSILES_ACH"/>
 	</choice>
 	<choice>
@@ -568,7 +568,24 @@ Kestrel Cruiser -->
 </event>
 
 <event name="NO_MISSILES_ACH">
-        <text>This event isn't coded yet!</text>
+	<text>Do you have a Weapons System?</text>
+	<choice>
+		<text>Yes</text>
+		<event>
+        		<text>You receive message from your crew that a functioning pod with a weapon inside it has arrived. While you install it on your ship you hear a voice say: "Mission complete".</text>
+			<weapon name="LASER_CHAINGUN_2" />
+		</event>
+	</choice>
+	<choice>
+		<text>No</text>
+		<event>
+			<text>An Engi ships decloaks nearby, preparing to install a weapon system on your ship. You let them do the work.</text>
+			<system name="weapons"/>
+			<choice><text>Continue</text><event>
+        		<text>You receive message from your crew that a functioning pod with a weapon inside it has arrived. While you install it on your ship you hear a voice say: "Mission complete".</text>
+			<weapon name="LASER_CHAINGUN_2" /></event></choice>
+		</event>
+	</choice>
 </event>
 
 <event name="NO_DRONES_ACH">
