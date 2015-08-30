@@ -622,7 +622,162 @@ Kestrel Cruiser -->
 </event>
 
 <event name="NO_PURCHASE_ACH">
-        <text>This event isn't coded yet!</text>
+        <text>They think for a while and then promise to give you a fully kitted out ship to prevent you from buying anything at a store.</text>
+	<upgrade amount="25" system="reactor"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Engine upgrades have arrived!</text>
+	<upgrade amount="7"  system="engines"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Shield upgrades have arrived!</text>
+	<upgrade amount="7"  system="shields"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Weapon upgrades have arrived!</text>
+	<upgrade amount="7"  system="weapons"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Medbay upgrades have arrived!</text>
+	<upgrade amount="2"  system="medbay"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Teleporter upgrades have arrived!</text>
+	<upgrade amount="2"  system="teleporter"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Door upgrades have arrived!</text>
+	<upgrade amount="2"  system="doors"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Sensor upgrades have arrived!</text>
+	<upgrade amount="2"  system="sensor"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Piloting upgrades have arrived!</text>
+	<upgrade amount="2"  system="piloting"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Backup Battery upgrades have arrived!</text>
+	<upgrade amount="2"  system="battery"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Clone Bay upgrades have arrived!</text>
+	<upgrade amount="2"  system="clonebay"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Oxygen upgrades have arrived!</text>
+	<upgrade amount="3"  system="oxygen"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Drone Control upgrades have arrived!</text>
+	<upgrade amount="7"  system="drones"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Piloting upgrades have arrived!</text>
+	<upgrade amount="2"  system="piloting"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Artillery upgrades have arrived!</text>
+	<upgrade amount="2"  system="artillery"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Mind Control upgrades have arrived!</text>
+	<upgrade amount="2"  system="mind"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Hacking upgrades have arrived!</text>
+	<upgrade amount="2"  system="hacking"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Chain Vulcan has arrived!</text>
+	<weapon name="LASER_CHAINGUN_2"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Glaive Beam has arrived!</text>
+	<weapon name="BEAM_3"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Pegasus Missile launcher has arrived!</text>
+	<weapon name="MISSILES_BURST"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Ion Blast Mark II has arrived!</text>
+	<weapon name="ION_4"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The FTL Recharge Booster has arrived!</text>
+	<augment name="FTL_BOOSTER"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Zoltan Shield has arrived!</text>
+	<augment name="ENERGY_SHIELD"/>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
 </event>
 
 <event name="NO_CREW_DEAD_ACH">
