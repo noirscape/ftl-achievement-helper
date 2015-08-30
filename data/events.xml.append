@@ -431,7 +431,120 @@ Kestrel Cruiser -->
 </event>
 
 <event name="NO_UPGRADE_ACH">
-        <text>This event isn't coded yet!</text>
+        <text>When you choose this option, they promise to immediatly max out your ships systems. (The game doesn't count forced upgrades).</text>
+	<upgrade amount="25" system="reactor"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Engine upgrades have arrived!</text>
+	<upgrade amount="7"  system="engines"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Shield upgrades have arrived!</text>
+	<upgrade amount="7"  system="shields"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Weapon upgrades have arrived!</text>
+	<upgrade amount="7"  system="weapons"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Medbay upgrades have arrived!</text>
+	<upgrade amount="2"  system="medbay"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Teleporter upgrades have arrived!</text>
+	<upgrade amount="2"  system="teleporter"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Door upgrades have arrived!</text>
+	<upgrade amount="2"  system="doors"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Sensor upgrades have arrived!</text>
+	<upgrade amount="2"  system="sensor"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Piloting upgrades have arrived!</text>
+	<upgrade amount="2"  system="piloting"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Backup Battery upgrades have arrived!</text>
+	<upgrade amount="2"  system="battery"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Clone Bay upgrades have arrived!</text>
+	<upgrade amount="2"  system="clonebay"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Oxygen upgrades have arrived!</text>
+	<upgrade amount="3"  system="oxygen"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Drone Control upgrades have arrived!</text>
+	<upgrade amount="7"  system="drones"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Piloting upgrades have arrived!</text>
+	<upgrade amount="2"  system="piloting"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Artillery upgrades have arrived!</text>
+	<upgrade amount="2"  system="artillery"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Mind Control upgrades have arrived!</text>
+	<upgrade amount="2"  system="mind"/>
+	<choice hidden="true">
+	<text>Continue...</text>
+	<event>
+	<text>The Hacking upgrades have arrived!</text>
+	<upgrade amount="2"  system="hacking"/>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
+	</event>
+	</choice>
 </event>
 
 <event name="WING_ACH">
