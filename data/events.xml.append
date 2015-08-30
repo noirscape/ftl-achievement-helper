@@ -198,7 +198,29 @@ Kestrel Cruiser -->
 </event>
 
 <event name="KESTREL_ACH_2">
-        <text>This event isn't coded yet!</text>
+        <text>Additional Options:Ship Type</text>
+	<choice>
+		<text>Type A</text>
+		<event>
+			<text>An Engi ship decloaks nearby, preparing themselves to install the needed systems on your ship.</text>
+			<system name="cloaking"/>
+			<choice><text>Continue...</text><event>
+			<text>Installed Drone Control!</text>
+			<system name="drones"/>
+			<choice><text>Continue...</text><event>
+			<text>Installed Teleporter</text>
+			<system name="teleporter"/>
+			</event></choice></event></choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Type B</text>
+		<event />
+	</choice>
+	<choice>
+		<text>Type C</text>
+		<event />
+	</choice>
 </event>
 
 <event name="KESTREL_ACH_3">
