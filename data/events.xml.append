@@ -781,7 +781,7 @@ Kestrel Cruiser -->
 </event>
 
 <event name="NO_CREW_DEAD_ACH">
-        <text>This event isn't coded yet!</text>
+        <text>"I'm afraid I can't do that Dave." They disconnect and you can vaguely hear laughter.</text>
 </event>
 
 <!-- Skill and Equipment -->
