@@ -589,7 +589,36 @@ Kestrel Cruiser -->
 </event>
 
 <event name="NO_DRONES_ACH">
-        <text>This event isn't coded yet!</text>
+        <text>Make your choice between a teleporter or weaponry.</text>
+	<choice>
+		<text>Weapons</text>
+		<event>
+		<text>An Engi ship decloaks nearby. They request if you already have a Weapons system on your ship.</text>
+		<choice>
+			<text>Yes</text>
+			<event>
+			<text>They give you a Chain Vulcan to help you out.</text>
+			<weapon name="LASER_CHAINGUN_2" />
+			</event>
+		</choice>
+		<choice>
+			<text>No</text>
+			<event>
+			<text>They install a Weapons system on your ship.</text>
+			<system name="weapons"/>
+			<text>They give you a Chain Vulcan afterwards.</text>
+			<weapon name="LASER_CHAINGUN_2" />
+			</event>
+		</choice>
+		</event>
+	</choice>
+	<choice>
+		<text>Teleporter</text>
+		<event>
+			<text>An Engi ship decloaks nearby, preparing to install a Crew Teleporter on your ship. You let them do the work.</text>
+			<system name="teleporter"/>
+		</event>
+	</choice>
 </event>
 
 <event name="NO_PURCHASE_ACH">
