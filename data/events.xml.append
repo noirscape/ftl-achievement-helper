@@ -306,19 +306,19 @@ Kestrel Cruiser -->
 		<event load="WING_ACH"/>
 	</choice>
 	<choice>
-		<text>Ballistophobia</text>
+		<text>Ballistophobia (Uncoded)</text>
 		<event load="NO_MISSILES_ACH"/>
 	</choice>
 	<choice>
-		<text>Technophobia</text>
+		<text>Technophobia (Uncoded)</text>
 		<event load="NO_DRONES_ACH"/>
 	</choice>
 	<choice>
-		<text>Living off the Land</text>
+		<text>Living off the Land (Uncoded)</text>
 		<event load="NO_PURCHASE_ACH"/>
 	</choice>
 	<choice>
-		<text>No Redshirts Here</text>
+		<text>No Redshirts Here (Uncoded)</text>
 		<event load="NO_CREW_DEAD_ACH"/>
 	</choice>
 </event>
@@ -548,7 +548,23 @@ Kestrel Cruiser -->
 </event>
 
 <event name="WING_ACH">
-        <text>This event isn't coded yet!</text>
+        <text>They think it over and they've found a solution. They're gonna give you a hull drone and a drone control.</text>
+	<choice>
+		<text>I already have a drone control.</text>
+		<event>
+			<text>They give you a hull repair drone and wish you good luck.</text>
+			<drone name="SHIP_REPAIR"/>
+		</event>
+	</choice>
+	<choice>
+		<text>I don't have a drone control yet.</text>
+		<event>
+			<text>They give you a drone control and prepare the hull repair drone.</text>
+			<system name="drones"/>
+			<text>They send over the hull repair drone and wish you good luck.</text>
+			<drone name="SHIP_REPAIR"/>
+		</event>
+	</choice>
 </event>
 
 <event name="NO_MISSILES_ACH">
