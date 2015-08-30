@@ -23,5 +23,5 @@ ftl-achievement-helper is a mod for the indie game FTL. The mod aims to help use
   - [ ] Lanius
   - [ ] Crystal
 - [ ] Generic Achievements
-  - [ ] Going the Distance
+  - [x] Going the Distance
   - [ ] Skill and Equipment
