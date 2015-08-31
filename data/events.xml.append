@@ -103,7 +103,7 @@ Kestrel Cruiser -->
 		<event load="KESTREL_ACH_1"/>
 	</choice>
 	<choice>
-		<text>Full Arsenal (Uncoded)</text>
+		<text>Full Arsenal</text>
 		<event load="KESTREL_ACH_2"/>
 	</choice>
 	<choice>
@@ -332,7 +332,7 @@ Kestrel Cruiser -->
 		<event load="NO_PURCHASE_ACH"/>
 	</choice>
 	<choice>
-		<text>No Redshirts Here (Uncoded)</text>
+		<text>No Redshirts Here</text>
 		<event load="NO_CREW_DEAD_ACH"/>
 	</choice>
 </event>
@@ -481,12 +481,12 @@ Kestrel Cruiser -->
 	<text>Continue...</text>
 	<event>
 	<text>The Sensor upgrades have arrived!</text>
-	<upgrade amount="2"  system="sensor"/>
+	<upgrade amount="2"  system="sensors"/>
 	<choice hidden="true">
 	<text>Continue...</text>
 	<event>
-	<text>The Piloting upgrades have arrived!</text>
-	<upgrade amount="2"  system="piloting"/>
+	<text>The Pilot upgrades have arrived!</text>
+	<upgrade amount="2"  system="pilot"/>
 	<choice hidden="true">
 	<text>Continue...</text>
 	<event>
@@ -510,8 +510,8 @@ Kestrel Cruiser -->
 	<choice hidden="true">
 	<text>Continue...</text>
 	<event>
-	<text>The Piloting upgrades have arrived!</text>
-	<upgrade amount="2"  system="piloting"/>
+	<text>The Pilot upgrades have arrived!</text>
+	<upgrade amount="2"  system="pilot"/>
 	<choice hidden="true">
 	<text>Continue...</text>
 	<event>
@@ -672,12 +672,12 @@ Kestrel Cruiser -->
 	<text>Continue...</text>
 	<event>
 	<text>The Sensor upgrades have arrived!</text>
-	<upgrade amount="2"  system="sensor"/>
+	<upgrade amount="2"  system="sensors"/>
 	<choice hidden="true">
 	<text>Continue...</text>
 	<event>
-	<text>The Piloting upgrades have arrived!</text>
-	<upgrade amount="2"  system="piloting"/>
+	<text>The Pilot upgrades have arrived!</text>
+	<upgrade amount="2"  system="pilot"/>
 	<choice hidden="true">
 	<text>Continue...</text>
 	<event>
@@ -701,8 +701,8 @@ Kestrel Cruiser -->
 	<choice hidden="true">
 	<text>Continue...</text>
 	<event>
-	<text>The Piloting upgrades have arrived!</text>
-	<upgrade amount="2"  system="piloting"/>
+	<text>The Pilot upgrades have arrived!</text>
+	<upgrade amount="2"  system="pilot"/>
 	<choice hidden="true">
 	<text>Continue...</text>
 	<event>
