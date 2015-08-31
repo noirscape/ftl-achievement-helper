@@ -12,7 +12,7 @@ ftl-achievement-helper is a mod for the indie game FTL. The mod aims to help use
     - [x] Lower row ships.
     - [x] Generic Achievements.
 - [ ] Code Achievements.
-  - [ ] Kestrel
+  - [x] Kestrel
   - [ ] Engi
   - [ ] Federation
   - [ ] Zoltan
