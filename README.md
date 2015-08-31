@@ -4,6 +4,7 @@ Helps to restore achievements after data corruption in FTL
 # What is this?
 ftl-achievement-helper is a mod for the indie game FTL. The mod aims to help users restore their achievements after corruption.
 
+Note:Requires kartoflane's Universal Starting Beacon mod to work.
 # Current progress
 - [x] Create primary skeleton
   - [x] Create outline skeleton.
