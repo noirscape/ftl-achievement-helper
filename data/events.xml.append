@@ -21,7 +21,7 @@
 		<event load="LOWER_ROW_ACH"/>
 	</choice>
 	<choice  hidden="false">
-		<text>Generic Achievements (Uncoded)</text>
+		<text>Generic Achievements</text>
 		<event load="GEN_ACH"/>
 	</choice>
 <!--	<choice req="anaerobic">	-->
@@ -87,7 +87,7 @@
 		<event load="DISTANCE_ACH"/>
 	</choice>
 	<choice>
-		<text>Skill and Equipment</text>
+		<text>Skill and Equipment (Uncoded)</text>
 		<event load="SKILL_ACH"/>
 	</choice>
 		
@@ -198,7 +198,21 @@ Kestrel Cruiser -->
 </event>
 
 <event name="KESTREL_ACH_2">
-        <text>This event isn't coded yet!</text>
+        <text>Additional Options:None</text>
+	<choice>
+		<text>Continue...</text>
+		<event>
+			<text>An Engi ship decloaks nearby, preparing themselves to install the needed systems on your ship.</text>
+			<system name="cloaking"/>
+			<choice><text>Continue...</text><event>
+			<text>Installed Drone Control!</text>
+			<system name="drones"/>
+			<choice><text>Continue...</text><event>
+			<text>Installed Teleporter</text>
+			<system name="teleporter"/>
+			</event></choice></event></choice>
+		</event>
+	</choice>
 </event>
 
 <event name="KESTREL_ACH_3">
@@ -310,11 +324,11 @@ Kestrel Cruiser -->
 		<event load="NO_MISSILES_ACH"/>
 	</choice>
 	<choice>
-		<text>Technophobia (Uncoded)</text>
+		<text>Technophobia</text>
 		<event load="NO_DRONES_ACH"/>
 	</choice>
 	<choice>
-		<text>Living off the Land (Uncoded)</text>
+		<text>Living off the Land</text>
 		<event load="NO_PURCHASE_ACH"/>
 	</choice>
 	<choice>
@@ -325,31 +339,31 @@ Kestrel Cruiser -->
 
 <event name="SKILL_ACH">
 	<choice>
-		<text>Some people just like to watch ships burn</text>
+		<text>Some people just like to watch ships burn (Uncoded)</text>
 		<event load="TROLL_ACH"/>
 	</choice>
 	<choice>
-		<text>Astronomically Low Odds</text>
+		<text>Astronomically Low Odds (Uncoded)</text>
 		<event load="SUPERLOW_ACH"/>
 	</choice>
 	<choice>
-		<text>BOARDING OBJECTIVE SUCCESFUL</text>
+		<text>BOARDING OBJECTIVE SUCCESFUL (Uncoded)</text>
 		<event load="BOARDING_DRONE_ACH"/>
 	</choice>
 	<choice>
-		<text>They never saw it coming</text>
+		<text>They never saw it coming (Uncoded)</text>
 		<event load="PRESHOTTER"/>
 	</choice>
 	<choice>
-		<text>Trustworthy Auto-Pilot</text>
+		<text>Trustworthy Auto-Pilot (Uncoded)</text>
 		<event load="BOARD_ALL"/>
 	</choice>
 	<choice>
-		<text>Slice and Dice</text>
+		<text>Slice and Dice (Uncoded)</text>
 		<event load="SLICE_AND_DICE"/>
 	</choice>
 	<choice>
-		<text>Victory through Asphyxation</text>
+		<text>Victory through Asphyxation (Uncoded)</text>
 		<event load="OXYGEN_MURDER"/>
 	</choice>
 </event>
