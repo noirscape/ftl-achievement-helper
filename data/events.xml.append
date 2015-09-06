@@ -234,7 +234,32 @@ Kestrel Cruiser -->
 <!-- Engi Cruiser -->
 
 <event name="ENGI_ACH">
-        <text>This event isn't coded yet!</text>
+        <text>Choose your Achievement. (Step 2/3)</text>
+	<choice>
+		<text>Robotic Warfare</text>
+		<event load="ENGI_ACH_1"/>
+	</choice>
+	<choice>
+		<text>I hardly lifted a finger</text>
+		<event load="ENGI_ACH_2"/>
+	</choice>
+	<choice>
+		<text>The guns... They've stopped</text>
+		<event load="ENGI_ACH_3"/>
+	</choice>
+</event>
+
+<event name="ENGI_ACH_1">
+	<text>Additional options: None (Step 3/3)</text>
+	<choice>
+		<text>Continue...</text>
+		<event>
+			<text>A hole in space-time opens near you, out of it fly two drones. You decide to install them on your ship. (Activate the drones to complete your achievement.)</text>
+			<choice><text>Continue...</text><event><text>The first drone is a Repair drone.</text><drone name="REPAIR"/>
+			<choice><text>Continue...</text><event><text>The second drone is again a Repair drone.</text><drone name="REPAIR"/>
+			</event></choice></event></choice>
+		</event>
+	</choice>
 </event>
 
 <!-- Federation Cruiser -->
