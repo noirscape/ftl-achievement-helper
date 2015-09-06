@@ -341,6 +341,7 @@ Kestrel Cruiser -->
 	</deadCrew>
 	<destroyed>
 	<text>Congratulations!</text>
+	</destroyed>
 </ship>
 
 <!-- Generic Achievements -->
