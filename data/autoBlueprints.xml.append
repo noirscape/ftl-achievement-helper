@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<blueprintList name="KESTREL_ACH_SHIPS">
+	<name>WEAK_REBEL_ACH</name>
+</blueprintList>
+
+<blueprintList name="CIRCLE_SCOUT_ACH">
+	<name>AUTO_ENGI_ACH</name>
+</blueprintList>
+
+<blueprintList name="AUTO_BASIC_ACH">
+	<name>CIRCLE_SCOUT_ACH</name>
+</blueprintList>
+
 <shipBlueprint name="WEAK_REBEL_ACH" layout="rebel_squat" img="rebel_squat">
 	<class>Deweaponized Rebel Rigger</class>
 	<minSector>1</minSector>
@@ -52,3 +64,43 @@
 	<crewCount amount="1" max="1" class="anaerobic" />
 	<boardingAI>sabotage</boardingAI>
 </shipBlueprint>
+
+<shipBlueprint name="AUTO_ENGI_ACH" layout="auto_basic" img="auto_basic">  <!-- NOTE:   This ship starts with no shields.  that ok?-->
+	<class>Auto-Scout</class>
+	<systemList>
+		<pilot power="1" max="2" room="2"/>
+		<shields power="1" max="1" room="3" start="false"/>
+		<engines power="2" max="8" room="1"/>
+		<weapons power="1" max="1" room="4"/>
+		<cloaking power="1" max="3" room="0" start="false"/>
+	</systemList>
+	<weaponList missiles="0" load="WEAPONS_AUTO"/>
+	<health amount="6"/>	
+	<maxPower amount ="6"/>
+	<crewCount amount = "0" max="0" class="human"/>
+	<cloakImage>auto_basic</cloakImage>
+</shipBlueprint>	
+
+ <shipBlueprint name="CIRCLE_SCOUT_ACH" layout="circle_scout" img="circle_scout">
+	<class>Engi Scout</class>
+	<maxSector>7</maxSector>
+	<systemList>
+		<pilot power="1" max="3" room="5"/>
+		<doors power="1" max="1" room="2" start="false"/>
+		<medbay power="1" max="1" room="6" start="false"/>
+		<oxygen power="1" max="1" room="3"/> 
+		<shields power="1" max="1" room="1"/>
+		<engines power="1" max="5" room="7"/>
+		<weapons power="1" max="1" room="4"/>
+		<drones power="1" max="1" room="0"/>
+	</systemList>
+	<weaponList missiles="6" load="WEAPONS_CIRCLE"/>
+	<droneList drones="4" load="DRONES_DEFENSE"/>
+	<health amount="7"/>	
+	<maxPower amount ="8"/>
+	<crewCount amount = "2" max="5" class="engi"/><!--CHANGED was 2 3-->
+	<boardingAI>sabotage</boardingAI>
+	<aug name="NANO_MEDBAY"/>
+	<cloakImage>circle_scout</cloakImage>
+</shipBlueprint>
+

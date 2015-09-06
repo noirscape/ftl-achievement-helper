@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ship autoblueprint="KESTREL_ACH_SHIPS" name="KESTREL_ACH">
+	<deadCrew>
+	<text>With the crew dead the fleet opens up their store to patch up the damage</text>
+	<store/>
+	</deadCrew>
+	<destroyed>
+	<text>With the ship destroyed the fleet opens up their store to patch up the damage</text>
+	<store/>
+	</destroyed>
+</ship>
+
+<ship autoblueprint="CIRCLE_SCOUT_ACH" name="ENGI_ACH_2_SHIP">
+	<deadCrew>
+	<text>You are a failure.</text>
+	</deadCrew>
+	<destroyed>
+	<text>Congratulations!</text>
+	</destroyed>
+</ship>
+
+<ship autoblueprint="AUTO_BASIC_ACH" name="ENGI_ACH_3_SHIP">
+	<deadCrew>
+	<text>I hate you.</text>
+	</deadCrew>
+	<destroyed>
+	<text>Congratulations!</text>
+	</destroyed>
+</ship>
