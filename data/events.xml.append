@@ -262,6 +262,17 @@ Kestrel Cruiser -->
 	</choice>
 </event>
 
+<event name="ENGI_ACH_2">
+	<text>Additional options:None (Step 3/3)</text>
+	<choice>
+		<text>Continue...</text>
+		<event>
+			<text>An Engi ship decloaks nearby, it has no shields or weapons. It opens communications and explains that they were send to help you. Before you can reply, the ship begins to move threathingly?</text>
+			<ship load="ENGI_ACH_2_SHIP" hostile="true"/>
+		</event>
+	</choice>
+</event>
+
 <!-- Federation Cruiser -->
 
 <event name="FED_ACH">
@@ -321,6 +332,15 @@ Kestrel Cruiser -->
 	<text>With the ship destroyed the fleet opens up their store to patch up the damage</text>
 	<store/>
 	</destroyed>
+</ship>
+
+<ship autoblueprint="CIRCLE_SCOUT" name="ENGI_ACH_2_SHIP">
+	<weaponOverride count="0"/>	
+	<deadCrew>
+	<text>You are a failure.</text>
+	</deadCrew>
+	<destroyed>
+	<text>Congratulations!</text>
 </ship>
 
 <!-- Generic Achievements -->
