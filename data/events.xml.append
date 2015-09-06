@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <mod:findName type="event" name="START_GAME_CHOICES">
    <mod-append:choice>
       <text>(Achievement Helper). Connect to the Achievement Helper.</text>
@@ -42,7 +44,7 @@
 		<event load="KESTREL_ACH"/>
 	</choice>
 	<choice>
-		<text>Engi Cruiser (Uncoded)</text>
+		<text>Engi Cruiser</text>
 		<event load="ENGI_ACH"/>
 	</choice>
 	<choice>
@@ -254,10 +256,11 @@ Kestrel Cruiser -->
 	<choice>
 		<text>Continue...</text>
 		<event>
-			<text>A hole in space-time opens near you, out of it fly two drones. You decide to install them on your ship. (Activate the drones to complete your achievement.)</text>
+			<text>A hole in space-time opens near you, out of it fly three drones. You decide to install them on your ship. (Activate the drones to complete your achievement.)</text>
 			<choice><text>Continue...</text><event><text>The first drone is a Repair drone.</text><drone name="REPAIR"/>
 			<choice><text>Continue...</text><event><text>The second drone is again a Repair drone.</text><drone name="REPAIR"/>
-			</event></choice></event></choice>
+			<choice><text>Continue...</text><event><text>The third drone is again a Repair drone.</text><drone name="REPAIR"/>
+			</event></choice></event></choice></event></choice>
 		</event>
 	</choice>
 </event>
@@ -267,12 +270,23 @@ Kestrel Cruiser -->
 	<choice>
 		<text>Continue...</text>
 		<event>
-			<text>An Engi ship decloaks nearby, it has no shields or weapons. It opens communications and explains that they were send to help you. Before you can reply, the ship begins to move threathingly?</text>
+			<text>An Engi ship jumps in nearby, it has no shields. It opens communications and explains that they were send to help you. Before you can reply, the ship readies its weapons.</text>
 			<ship load="ENGI_ACH_2_SHIP" hostile="true"/>
 		</event>
 	</choice>
 </event>
 
+<event name="ENGI_ACH_3">
+	<text>Additional options: None</text>
+	<choice>
+		<text>Continue...</text>
+		<event>
+			<text>An Auto Cruiser jumps into vision. It strangely puts up a pulsar first before engaging you.</text>
+			<environment type="pulsar"/>
+			<ship load="ENGI_ACH_3_SHIP" hostile="true"/>
+		</event>
+	</choice>
+</event>
 <!-- Federation Cruiser -->
 
 <event name="FED_ACH">
@@ -321,28 +335,6 @@ Kestrel Cruiser -->
         <text>This event isn't coded yet!</text>
 </event>
 
-<!-- Enemy Ship Blueprints -->
-<!-- Broken -->
-<ship autoblueprint="WEAK_REBEL_ACH" name="KESTREL_ACH">
-	<deadCrew>
-	<text>With the crew dead the fleet opens up their store to patch up the damage</text>
-	<store/>
-	</deadCrew>
-	<destroyed>
-	<text>With the ship destroyed the fleet opens up their store to patch up the damage</text>
-	<store/>
-	</destroyed>
-</ship>
-
-<ship autoblueprint="CIRCLE_SCOUT" name="ENGI_ACH_2_SHIP">
-	<weaponOverride count="0"/>	
-	<deadCrew>
-	<text>You are a failure.</text>
-	</deadCrew>
-	<destroyed>
-	<text>Congratulations!</text>
-	</destroyed>
-</ship>
 
 <!-- Generic Achievements -->
 
